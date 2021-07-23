@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import FormButton from './FormButton';
 
 const Home = (props) => {
     return (
         <div>
-            <h1>Lambda Eats</h1>
+            <Link to = '/pizza' id = 'order-pizza'>
+                <FormButton />
+            </Link>
         </div>
     )
 }
